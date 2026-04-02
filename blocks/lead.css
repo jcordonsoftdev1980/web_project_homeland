@@ -5,9 +5,7 @@
 
   width: 100%;
   max-width: 984px;
-  margin: auto;
-
-  text-align: center;
+  margin: 0 auto;
 }
 
 .lead__title {
@@ -30,21 +28,33 @@
 
 .lead__image {
   width: 100%;
+  max-width: 984px;
   margin-top: 40px;
 }
 
 @media screen and (max-width: 768px) {
+  .lead {
+    max-width: 720px;
+  }
+
   .lead__title {
     font-size: 75px;
     line-height: 79px;
+    max-width: 530px;
   }
 }
 
 @media screen and (max-width: 320px) {
+  .lead {
+    padding: 0 16px;
+  }
+
   .lead__title {
     font-size: 40px;
     line-height: 44px;
+    max-width: 228px;
   }
+
   .lead__subtitle {
     font-size: 16px;
     line-height: 20px;
