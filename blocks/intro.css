@@ -1,6 +1,8 @@
 .intro {
   display: flex;
   flex-direction: column;
+  text-align: left;
+
   width: 100%;
   max-width: 984px;
   margin: auto;
@@ -30,4 +32,17 @@
   font-size: 18px;
   line-height: 168%;
   margin-top: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .intro {
+    max-width: 288px;
+    padding: 0 16px;
+  }
 }
